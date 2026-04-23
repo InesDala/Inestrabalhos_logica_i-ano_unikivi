@@ -1,0 +1,34 @@
+  Algoritmo "Ordem_Crescente_Sem_Ordenacao"
+
+Var
+   numero: vetor[1..15] de inteiro
+   i,j,menor: inteiro
+
+Inicio
+
+   // Ler os 15 valores
+   para i de 1 ate 15 faca
+      escreva("Informe o valor da posição ", i, ": ")
+      leia(numero[i])
+   fimpara
+
+   escreval("Vetor em ordem crescente:")
+
+   // Repetir 15 vezes
+   para i de 1 ate 15 faca
+
+      menor <- 9999
+
+      // Procurar o menor valor
+      para j de 1 ate 15 faca
+         se numero[j] < menor entao
+            menor <- numero[j]
+         fimse
+      fimpara
+
+      // Mostrar o menor
+      escreval(menor)
+
+   fimpara
+
+Fimalgoritmo
